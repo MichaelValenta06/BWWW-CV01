@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vstupenky & Info | UPCE RAVE Vol. 1</title>
+  <link rel="icon" href="./photos/fei.png" type="image/x-icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style-tickets.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">UPCE<span>RAVE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Úvod</a></li>
+      <li><a href="about.html">O nás</a></li>
+      <li><a href="lineup.html">Line-Up</a></li>
+      <li><a href="tickets.html" class="active">INFO & LÍSTKY</a></li>
+    </ul>
+  </nav>
+
+  <header class="tickets-hero">
+    <span class="hero-tag">Předprodej & Lokace</span>
+    <h1 class="hero-title">Vstupenky & Praktické Informace</h1>
+    <p class="hero-perex">
+      Zajisti si své místo včas. Kapacita prostoru je z bezpečnostních důvodů omezená. Níže najdeš kompletní informace o předprodeji, cestě na místo a pravidlech vstupu.
+    </p>
+  </header>
+
+  <main>
+    <section class="section pricing-section">
+      <span class="section-tag">Předprodej</span>
+      <h2 class="section-title">Vyber si svou vstupenku</h2>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="card-header">
+            <h3 class="ticket-name">Student UPCE - Limitka</h3>
+            <span class="ticket-badge">Zvýhodněná vlna</span>
+          </div>
+          <div class="ticket-price">150 <span>Kč</span></div>
+          <p class="ticket-desc">Vyžaduje platný ISIC při vstupu, limitováno na 200 ks.</p>
+          <ul class="ticket-features">
+            <li>✓ Přístup na obě stage</li>
+            <li>✓ Nutno předložit ISIC karta</li>
+            <li>✓ Omezená kapacita</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Koupit Lístek</a>
+        </article>
+
+        <article class="pricing-card standard">
+          <div class="card-header">
+            <h3 class="ticket-name">Standardní Vstupenka</h3>
+            <span class="ticket-badge">Běžný předprodej</span>
+          </div>
+          <div class="ticket-price">250 <span>Kč</span></div>
+          <p class="ticket-desc">Přístup na obě stage během celé noci.</p>
+          <ul class="ticket-features">
+            <li>✓ Přístup na obě stage</li>
+            <li>✓ Platí po celou noc</li>
+            <li>✓ Bez nutnosti studentského průkazu</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Koupit Lístek</a>
+        </article>
+
+        <article class="pricing-card vip">
+          <div class="card-header">
+            <h3 class="ticket-name">VIP Fast-Track + Support</h3>
+            <span class="ticket-badge vip-badge">VIP Zážitek</span>
+          </div>
+          <div class="ticket-price">450 <span>Kč</span></div>
+          <p class="ticket-desc">Přednostní vstup bez front, volný přístup do VIP zóny s vlastním barem a podporou projektu.</p>
+          <ul class="ticket-features">
+            <li>✓ Fast-track přednostní vstup</li>
+            <li>✓ Přístup do VIP zóny & vlastního baru</li>
+            <li>✓ Podpora studentského projektu</li>
+          </ul>
+          <a href="#" class="btn btn-vip">Koupit VIP</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section travel-section">
+      <span class="section-tag">Lokace & Doprava</span>
+      <h2 class="section-title">Jak se k nám dostat</h2>
+
+      <div class="travel-grid">
+        <div class="travel-card">
+          <div class="travel-icon">📍</div>
+          <h3>Adresa</h3>
+          <p>Městský kampus UPCE<br><strong>Studentská 95, Pardubice</strong></p>
+        </div>
+
+        <div class="travel-card">
+          <div class="travel-icon">🚌</div>
+          <h3>MHD</h3>
+          <p>Zastávka <strong>Polabiny, Hradecká</strong> (Linky 3, 11, 17, 33). Speciální posílený noční spoj bude přistaven po skončení akce u hlavní brány.</p>
+        </div>
+
+        <div class="travel-card">
+          <div class="travel-icon">🚗</div>
+          <h3>Parkování</h3>
+          <p>Vyhrazené parkoviště v areálu kampusu u <strong>Budovy G</strong> (kapacita omezená, doporučujeme využít MHD nebo sdílenou dopravu).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <span class="section-tag">Dotazy</span>
+      <h2 class="section-title">Často kladené dotazy (FAQ)</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Budou lístky i na místě?</summary>
+          <div class="faq-answer">
+            <p>Pokud se kapacita nevyprodá v předprodeji, bude na místě omezené množství lístků za vyšší cenu (300 Kč).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Je akce přístupná všem?</summary>
+          <div class="faq-answer">
+            <p>Akce je striktně 18+. Při vstupu probíhá kontrola dokladů totožnosti (OP / Pas / ISIC).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Je na místě k dispozici šatna?</summary>
+          <div class="faq-answer">
+            <p>Ano, v budově bude fungovat hlídaná šatna za symbolický poplatek 20 Kč.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Jak mohu platit na baru?</summary>
+          <div class="faq-answer">
+            <p>Na barech akceptujeme hotovost i bezkontaktní platby kartou / mobilem.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Soundcloud</a></li>
+        <li><a href="#">Facebook Event</a></li>
+      </ul>
+      <p class="copyright">© 2026 UPCE Rave. Vytvořeno jako zápočtový projekt.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

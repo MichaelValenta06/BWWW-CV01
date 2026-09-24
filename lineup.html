@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line-Up & Stage | UPCE RAVE Vol. 1</title>
+  <link rel="icon" href="./photos/fei.png" type="image/x-icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style-lineup.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">UPCE<span>RAVE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Úvod</a></li>
+      <li><a href="about.html">O nás</a></li>
+      <li><a href="lineup.html" class="active">Line-Up</a></li>
+      <li><a href="tickets.html">INFO & LÍSTKY</a></li>
+    </ul>
+  </nav>
+
+  <header class="lineup-hero">
+    <span class="hero-tag">Program & Stage</span>
+    <h1 class="hero-title">Zvuková vlna: Line-Up & Stage 2026</h1>
+    <p class="hero-perex">
+      Dva stage, 12 hodin neustálého rytmu, od hypnotického techna až po rychlé bpm drum & bassu a hardstyle. Prozkoumej profil každého interpreta.
+    </p>
+  </header>
+
+  <main>
+    <section class="section staging-section">
+      <span class="section-tag">Rozdělení Prostoru</span>
+      <h2 class="section-title">Přehled Stagingu</h2>
+
+      <div class="stages-grid">
+        <div class="stage-card stage-a">
+          <div class="stage-badge">STAGE A</div>
+          <h3 class="stage-name">Main Aula</h3>
+          <span class="stage-genre">Techno & Industrial</span>
+          <p class="stage-desc">
+            Hlavní scéna v prostoru bývalého přednáškového sálu s 15kW sound systémem a masivní laserovou show.
+          </p>
+        </div>
+
+        <div class="stage-card stage-b">
+          <div class="stage-badge">STAGE B</div>
+          <h3 class="stage-name">Suterén Budovy G</h3>
+          <span class="stage-genre">Drum & Bass / Bassline</span>
+          <p class="stage-desc">
+            Kompaktní, temný undergroundový prostor s vysokým akustickým tlakem pro milovníky rychlých zlomených beatů.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section djs-section">
+      <span class="section-tag">Artists</span>
+      <h2 class="section-title">Profily DJů</h2>
+
+      <div class="djs-grid">
+        <article class="dj-card">
+          <div class="dj-avatar-placeholder">
+            <img src="./photos/artworks-1tN45tqWIEqMdmKo-sAm8ZQ-t500x500.jpg" alt="DJ Hard-Code" class="dj-img">
+            <span class="dj-role">Resident DJ / Student FEI</span>
+          </div>
+          <div class="dj-content">
+            <h3 class="dj-name">Hard-Code</h3>
+            <span class="dj-style">Industrial Techno / Hard Techno</span>
+            <p class="dj-bio">
+              Hard-Code kombinuje prvky industrial techna s temnými syntetizátory. Jeho sety jsou známé nekompromisním tempem přesahujícím 145 BPM a chirurgicky přesnou strukturou, kterou piluje přímo mezi cvičeními z programování.
+            </p>
+          </div>
+        </article>
+
+        <article class="dj-card">
+          <div class="dj-avatar-placeholder">
+            <img src="./photos/doubleTrouble.jpg" alt="Katedra Basů" class="dj-img">
+            <span class="dj-role">B2B Project</span>
+          </div>
+          <div class="dj-content">
+            <h3 class="dj-name">Katedra Basů</h3>
+            <span class="dj-style">Techno / Psytrance</span>
+            <p class="dj-bio">
+              Dvojice producentů spojující klasické techno baslinky s prvky psytrance. Jejich živá vystoupení využívají autorské generativní vizuály synchronizované s beatem.
+            </p>
+          </div>
+        </article>
+
+        <article class="dj-card">
+          <div class="dj-avatar-placeholder">
+            <img src="./photos/tunel.jpg" alt="Sub_System" class="dj-img">
+            <span class="dj-role">Guest DJ</span>
+          </div>
+          <div class="dj-content">
+            <h3 class="dj-name">Sub_System</h3>
+            <span class="dj-style">90s Rave & Sound Design</span>
+            <p class="dj-bio">
+              Zástupce pražské undergroundové scény, který přiváží syrový sound 90. let kombinovaný s moderním sound designem.
+            </p>
+          </div>
+        </article>
+
+        <article class="dj-card">
+          <div class="dj-avatar-placeholder">
+            <img src="./photos/kabel.jpg" alt="Algorithmic Noise" class="dj-img">
+            <span class="dj-role">Student FF</span>
+          </div>
+          <div class="dj-content">
+            <h3 class="dj-name">Algorithmic Noise</h3>
+            <span class="dj-style">Breakbeat / Ambient / Modular</span>
+            <p class="dj-bio">
+              Experimentální set zaměřený na zlámané beaty, ambientní plochy a modulární syntézu.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timetable-section">
+      <span class="section-tag">Harmonogram</span>
+      <h2 class="section-title">Časový Rozpis (Timetable)</h2>
+
+      <div class="table-container">
+        <table class="timetable">
+          <thead>
+            <tr>
+              <th>Čas</th>
+              <th>Stage A (Main Aula)</th>
+              <th>Stage B (Suterén Budovy G)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">21:00 - 22:30</td>
+              <td>Warm-up Student Set</td>
+              <td>Ambient & Modulární plochy</td>
+            </tr>
+            <tr>
+              <td class="time-col">22:30 - 00:00</td>
+              <td>Sub_System</td>
+              <td>Algorithmic Noise</td>
+            </tr>
+            <tr>
+              <td class="time-col">00:00 - 02:00</td>
+              <td class="highlight-act">Hard-Code</td>
+              <td>Local D&B Crew</td>
+            </tr>
+            <tr>
+              <td class="time-col">02:00 - 04:00</td>
+              <td class="highlight-act">Katedra Basů</td>
+              <td>Bassline Mayhem</td>
+            </tr>
+            <tr>
+              <td class="time-col">04:00 - 06:00</td>
+              <td>Closing Industrial B2B</td>
+              <td>Afterhours Heavy DnB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Soundcloud</a></li>
+        <li><a href="#">Facebook Event</a></li>
+      </ul>
+      <p class="copyright">© 2026 UPCE Rave. Vytvořeno jako zápočtový projekt.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

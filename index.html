@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPCE RAVE Vol. 1 | Úvodní stránka</title>
+  <link rel="icon" href="./photos/fei.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">UPCE<span>RAVE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Úvod</a></li>
+      <li><a href="about.html">O nás</a></li>
+      <li><a href="lineup.html">Line-Up</a></li>
+      <li><a href="tickets.html">INFO & LÍSTKY</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <span class="hero-badge">24. 10. 2026 | SUTERÉN BUDOVY G (KLUB C)</span>
+    <h1 class="hero-title">UPCE RAVE Vol. 1<br><span class="highlight-magenta">ACADEMIC HARDCORE</span></h1>
+    <p class="hero-subtitle">Zapomeň na přednášky. Nechej zápočty v knihovně a přijď zažít nejsilnější basy semestru.</p>
+
+    <div class="hero-cta">
+      <a href="tickets.html" class="btn btn-green">Koupit Vstupenku</a>
+      <a href="lineup.html" class="btn btn-outline">Line-Up</a>
+    </div>
+
+    <div class="countdown-container">
+      <div class="countdown-box">
+        <span class="countdown-value" id="days">00</span>
+        <span class="countdown-label">Dny</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-value" id="hours">00</span>
+        <span class="countdown-label">Hodiny</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-value" id="minutes">00</span>
+        <span class="countdown-label">Minuty</span>
+      </div>
+      <div class="countdown-box">
+        <span class="countdown-value" id="seconds">00</span>
+        <span class="countdown-label">Sekundy</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <span class="section-tag">The Concept</span>
+      <h2 class="section-title">Když se aula promění v parket</h2>
+      <p class="section-description">
+        UPCE Rave spojuje akademickou komunitu s tím nejlepším z lokální elektronické undergroundové scény. Připrav se na unikátní audiovizuální show, kde průmyslový design univerzitních prostor potká 15kW sound systém, lasery a DJs z řad studentů i profesionálů.
+      </p>
+    </section>
+
+<section class="section">
+      <span class="section-tag">Program</span>
+      <h2 class="section-title">Nabitý Stage</h2>
+      
+      <div class="lineup-grid">
+        <article class="artist-card">
+          <div class="artist-image-placeholder">
+            <img src="./photos/sage1.jpg" alt="DJ DEKAN" class="artist-img">
+            <span class="artist-tag">HEADLINER</span>
+          </div>
+          <div class="artist-info">
+            <h3 class="artist-name">DJ DEKAN</h3>
+            <p class="artist-genre">Industrial Techno</p>
+            <span class="artist-time">23:00 - 00:30</span>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <div class="artist-image-placeholder">
+            <img src="./photos/doubleTrouble.jpg" alt="HARD-CODE B2B" class="artist-img">
+            <span class="artist-tag">B2B SET</span>
+          </div>
+          <div class="artist-info">
+            <h3 class="artist-name">HARD-CODE B2B</h3>
+            <p class="artist-genre">Hard Techno / Acid</p>
+            <span class="artist-time">00:30 - 02:00</span>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <div class="artist-image-placeholder">
+            <img src="./photos/artworks-1tN45tqWIEqMdmKo-sAm8ZQ-t500x500.jpg" alt="KATEDRA BASŮ" class="artist-img">
+            <span class="artist-tag">RESIDENT</span>
+          </div>
+          <div class="artist-info">
+            <h3 class="artist-name">KATEDRA BASŮ</h3>
+            <p class="artist-genre">Drum & Bass</p>
+            <span class="artist-time">02:00 - 03:30</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-tag">Tickets</span>
+      <h2 class="section-title">Vyber si svou vlnu</h2>
+
+      <div class="tickets-grid">
+        <div class="ticket-card disabled">
+          <span class="ticket-status status-sold">Vyprodáno</span>
+          <h3 class="ticket-title">1. Vlna - Early Bird</h3>
+          <p class="ticket-sub">Student UPCE (ISIC)</p>
+          <div class="ticket-price">150 Kč</div>
+          <a href="#" class="btn btn-disabled">Vyprodáno</a>
+        </div>
+
+        <div class="ticket-card active">
+          <span class="ticket-status status-active">Aktivní prodej</span>
+          <h3 class="ticket-title">2. Vlna - Standard</h3>
+          <p class="ticket-sub">Vstup na všechny stage</p>
+          <div class="ticket-price">250 Kč</div>
+          <a href="tickets.html" class="btn btn-green">Koupit</a>
+        </div>
+
+        <div class="ticket-card">
+          <span class="ticket-status status-vip">Limitováno</span>
+          <h3 class="ticket-title">VIP Fast-Track + Drink</h3>
+          <p class="ticket-sub">Přednostní vstup & welcome drink</p>
+          <div class="ticket-price">450 Kč</div>
+          <a href="tickets.html" class="btn btn-outline">Koupit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="section-tag">Location & Info</span>
+      <h2 class="section-title">Praktické Informace</h2>
+
+      <div class="info-container">
+        <div class="info-rules">
+          <h3>Základní Pravidla</h3>
+          <ul>
+            <li>Vstup pouze 18+ (Kontrola OP / Pas na místě).</li>
+            <li>ISIC karta s sebou pro uplatnění studentské slevy.</li>
+            <li>No-photo policy na parketu pro zachování undergroundové atmosféry.</li>
+          </ul>
+        </div>
+
+        <div class="info-location">
+          <h3>Jak se k nám dostat</h3>
+          <p>Suterén Budovy G (Klub C), Městský kampus UPCE, Pardubice.</p>
+          <p class="location-details">MHD Zastávka: <strong>Polabiny, Hradecká</strong> (Linky 3, 11, 17, 33).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Soundcloud</a></li>
+        <li><a href="#">Facebook Event</a></li>
+      </ul>
+      <p class="copyright">© 2026 UPCE Rave. Vytvořeno jako zápočtový projekt.</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
